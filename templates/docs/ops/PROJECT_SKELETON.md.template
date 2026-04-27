@@ -1,0 +1,48 @@
+# PROJECT_SKELETON
+
+This file is the stable short-map of the repository.
+
+It should not duplicate `STATE.md`.
+It should change only when the project structure or conceptual architecture changes.
+
+## What this repository is
+
+`<short definition>`
+
+## What this repository is not
+
+`<scope boundaries>`
+
+## Core directories
+
+- `<path>` — `<role>`
+- `<path>` — `<role>`
+
+## Core concepts
+
+- `<concept>` — `<meaning>`
+- `<concept>` — `<meaning>`
+
+## Non-goals
+
+- `<non-goal>`
+- `<non-goal>`
+
+## Current structural risks
+
+- `<risk>`
+- `<risk>`
+
+## Reentry rule
+
+Before structural or semantic work, read the standard minimum reentry set:
+
+1. `AGENTS.md`
+2. `README.md`
+3. `STATE.md`
+4. `docs/ops/PROJECT_SKELETON.md`
+5. `docs/ops/CONTEXT_SYNC_CHECKLIST.md`
+
+Then read task-local context files.
+
+If the agent cannot summarize the current structure honestly, it must not change macrostructure.
