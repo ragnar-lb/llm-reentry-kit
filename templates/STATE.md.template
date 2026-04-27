@@ -1,0 +1,47 @@
+# STATE.md
+
+This file records the current operational state of the repository.
+
+It is not a changelog.
+It is not a roadmap fantasy.
+It is not a complete documentation index.
+
+It exists so a future agent can re-enter the project without guessing.
+
+## Current phase
+
+`<state the current phase plainly>`
+
+## Last stable checkpoint
+
+`<commit, release, milestone, or known-good state>`
+
+## Active blockers
+
+- `<blocker 1>`
+- `<blocker 2>`
+
+## Current allowed work
+
+- `<allowed narrow work>`
+- `<allowed maintenance work>`
+
+## Current forbidden work
+
+- `<blocked scope>`
+- `<blocked architecture move>`
+- `<blocked product direction>`
+
+## Current risks
+
+- `<drift risk>`
+- `<context risk>`
+- `<technical debt risk>`
+
+## Next recommended narrow step
+
+`<one concrete next step, not a fake roadmap>`
+
+## Last context write-back
+
+`<date or commit>`
