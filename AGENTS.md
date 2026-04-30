@@ -14,6 +14,33 @@ The target user may not be a programmer.
 The target user may be delegating project execution to an LLM coding agent.
 The agent must therefore reduce context drift, avoid silent scope expansion, and preserve enough repository state for future work.
 
+## Dogfood rule for this repository
+
+This repository must follow the same reentry discipline it teaches others to install.
+
+Before repo-level recommendations or structural/semantic changes in `llm-reentry-kit`, read:
+
+1. `AGENTS.md`
+2. `README.md`
+3. `STATE.md`
+4. `docs/ops/PROJECT_SKELETON.md`
+5. `docs/ops/CONTEXT_SYNC_CHECKLIST.md`
+
+Only after that, read task-local context files.
+
+Before structural or semantic work, be able to summarize:
+
+- what this repository is;
+- what this repository is not;
+- current phase;
+- active blockers;
+- what the task changes;
+- what the task does not reopen.
+
+If that summary cannot be produced honestly, do not change macrostructure.
+
+After structural or semantic changes, update the relevant context files in the same cycle.
+
 ## Standard target files
 
 The standard minimum reentry set for a target repository is:
