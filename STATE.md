@@ -43,6 +43,7 @@ The repository is a public, Markdown-first governance bootstrap kit for LLM-assi
 - add small examples
 - tighten the reentry contract
 - fix contradictions between governance files
+- test the kit on real target repositories and record friction
 
 ## Current forbidden work
 
@@ -55,8 +56,8 @@ The repository is a public, Markdown-first governance bootstrap kit for LLM-assi
 
 ## Current risks
 
-- the kit may become too abstract if no examples exist
-- the kit may become decorative if it does not dogfood its own rules
+- the minimal example may become decorative if the kit is not tested on real target repositories
+- the kit may become decorative if it stops dogfooding its own rules
 - the kit may become overbuilt if automation is added before repeated manual use proves pain
 
 ## Next recommended narrow step
@@ -67,4 +68,4 @@ Do not automate until the manual prompt/template workflow has been used enough t
 
 ## Last context write-back
 
-`v0.2 dogfood pass: added live STATE, PROJECT_SKELETON, CONTEXT_SYNC_CHECKLIST, quickstart, bootstrap prompt, and minimal example.`
+`v0.2 dogfood repair: live STATE, PROJECT_SKELETON, CONTEXT_SYNC_CHECKLIST, README quickstart, BOOTSTRAP_FROM_SCRATCH prompt, minimal example, and AGENTS dogfood rule are now aligned.`
