@@ -46,26 +46,43 @@ Do not trust a long-running LLM to remember the whole project.
 
 Make the target repository store enough stable context for the next agent run to re-enter safely.
 
-## How to use
+## Quickstart
 
-Inside the target repository, give your coding agent one of the prompts in `prompts/`.
+Clone or open this repository next to the target repository, then paste one of the prompts below into your coding agent while the agent is operating inside the target repository.
 
-Recommended first use:
+For a repository with little or no governance:
 
 ```text
-Read prompts/INSTALL_REENTRY_KIT.md from llm-reentry-kit and apply it to this repository.
+Read `prompts/BOOTSTRAP_FROM_SCRATCH.md` from `llm-reentry-kit` and apply it to this repository.
+Do not add runtime code. Do not create a CLI. Install only the minimal document-level reentry contract.
 ```
 
-If the target repository already has governance docs, use:
+For a repository that already has some documentation or governance:
 
 ```text
-Read prompts/AUDIT_EXISTING_GOVERNANCE.md first. Do not edit files yet.
+Read `prompts/AUDIT_EXISTING_GOVERNANCE.md` from `llm-reentry-kit` and audit this repository first.
+Do not edit files yet. Report missing files, contradictions, stale state, and the minimum safe patch.
 ```
 
-If the target repository already has partial governance and needs tightening, use:
+For normal installation after audit:
 
 ```text
-Read prompts/HARDEN_REENTRY_CONTRACT.md and patch only the governance drift.
+Read `prompts/INSTALL_REENTRY_KIT.md` from `llm-reentry-kit` and apply it to this repository.
+Inspect the target repository first. Do not blindly copy templates. Keep the patch minimal and document-only.
+```
+
+For tightening an existing installation:
+
+```text
+Read `prompts/HARDEN_REENTRY_CONTRACT.md` from `llm-reentry-kit` and patch only governance drift.
+Make all reentry files agree on the same standard minimum reentry set.
+```
+
+Before merging a governance branch:
+
+```text
+Read `prompts/MERGE_READY_REVIEW.md` from `llm-reentry-kit` and review this branch for merge readiness.
+Do not edit files unless the review finds a blocking governance issue.
 ```
 
 ## What this kit is not
@@ -103,6 +120,20 @@ review this repo and tell me what we should do next
 ```
 
 should trigger the agent to rehydrate context from the standard minimum reentry set before making recommendations or changing structure.
+
+## Repository dogfood
+
+This repository follows its own contract.
+
+Before structural or semantic changes here, agents should read:
+
+1. `AGENTS.md`
+2. `README.md`
+3. `STATE.md`
+4. `docs/ops/PROJECT_SKELETON.md`
+5. `docs/ops/CONTEXT_SYNC_CHECKLIST.md`
+
+Then they should read task-local files.
 
 ## Residual risk
 
