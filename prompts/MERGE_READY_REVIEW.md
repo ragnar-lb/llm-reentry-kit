@@ -16,7 +16,7 @@ Check:
 - only expected governance files changed;
 - no product code changed unexpectedly;
 - no runtime files changed unexpectedly;
-- `AGENTS.md`, `README.md`, `STATE.md`, `PROJECT_SKELETON`, and `CONTEXT_SYNC_CHECKLIST` agree with each other;
+- `AGENTS.md`, `README.md`, `STATE.md`, `docs/ops/PROJECT_SKELETON.md`, and `docs/ops/CONTEXT_SYNC_CHECKLIST.md` agree with each other;
 - standard minimum reentry set is named consistently;
 - context write-back rule is present;
 - no duplicate or stale state language was introduced;
