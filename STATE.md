@@ -27,7 +27,7 @@ The repository is a public, Markdown-first governance bootstrap kit for LLM-assi
 
 `v0.2` makes the repository dogfood its own reentry contract.
 
-`Issue #1` records a clean dogfood audit after the v0.2 repair cycle found no remaining governance contradiction in the checked set.
+`Issue #1` records the final clean dogfood audit after the v0.2 repair cycle and follow-up path-canonicalization pass. It is closed as completed.
 
 ## Active blockers
 
@@ -70,4 +70,4 @@ Do not automate until the manual prompt/template workflow has been used enough t
 
 ## Last context write-back
 
-`v0.2 dogfood repair and audit checkpoint: live STATE, PROJECT_SKELETON, CONTEXT_SYNC_CHECKLIST, README quickstart, BOOTSTRAP_FROM_SCRATCH prompt, minimal example, AGENTS dogfood rule, and Issue #1 clean-audit record are now aligned.`
+`v0.2 final clean audit checkpoint: live STATE, AGENTS dogfood rule, PROJECT_SKELETON, CONTEXT_SYNC_CHECKLIST, README quickstart, BOOTSTRAP_FROM_SCRATCH prompt, minimal example, canonical ops paths in docs/prompts, and closed Issue #1 audit record are aligned.`
