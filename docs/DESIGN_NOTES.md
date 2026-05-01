@@ -31,8 +31,8 @@ The five-file set splits responsibilities:
 - `AGENTS.md` tells agents how to behave.
 - `README.md` tells humans and agents what the repo is.
 - `STATE.md` records the current operational phase.
-- `PROJECT_SKELETON.md` records stable structure.
-- `CONTEXT_SYNC_CHECKLIST.md` forces before/after discipline.
+- `docs/ops/PROJECT_SKELETON.md` records stable structure.
+- `docs/ops/CONTEXT_SYNC_CHECKLIST.md` forces before/after discipline.
 
 The goal is not more documentation.
 The goal is less hidden context.
