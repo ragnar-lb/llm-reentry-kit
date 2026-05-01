@@ -23,9 +23,11 @@ Its primary audience is people building real software with coding agents before 
 
 ## Core directories and files
 
-- `README.md` — human-facing project overview and quickstart.
-- `AGENTS.md` — operating instructions for agents working on this kit.
-- `STATE.md` — current operational phase, blockers, allowed work, risks, and next narrow step.
+- `README.md` — human-facing project overview and quickstart; protected command file.
+- `AGENTS.md` — single executive instruction entrypoint for agents working on this kit; protected command file.
+- `STATE.md` — current operational phase, blockers, allowed work, risks, and next narrow step; live state file for write-back.
+- `docs/ops/PROJECT_SKELETON.md` — stable structure map; protected command file.
+- `docs/ops/CONTEXT_SYNC_CHECKLIST.md` — before/after governance gate; protected command file.
 - `prompts/` — copy-pasteable prompts for applying the kit to target repositories.
 - `templates/` — adaptable target-repository file templates.
 - `docs/` — explanatory notes, concepts, and anti-patterns.
@@ -39,6 +41,7 @@ Its primary audience is people building real software with coding agents before 
 - task-local context — files specific to the slice being changed, read after the standard set.
 - context write-back — updating relevant context files after structural or semantic changes.
 - dogfooding — this repository must follow the same reentry contract it teaches others to install.
+- protected command file — a governance file read during normal operation but changed only in explicit governance-maintenance mode.
 
 ## Standard minimum reentry set
 
@@ -52,6 +55,21 @@ Before repo-level recommendations or structural/semantic work in this repository
 
 Only after that, read task-local context files.
 
+## Protected governance model
+
+Normal operational work may update `STATE.md` when truthful context write-back is required.
+
+Normal operational work must not modify protected command files:
+
+- `AGENTS.md`
+- `README.md`
+- `docs/ops/PROJECT_SKELETON.md`
+- `docs/ops/CONTEXT_SYNC_CHECKLIST.md`
+
+Changing protected command files requires explicit governance-maintenance mode and an audit trail.
+
+Do not create an alternate command document that competes with `AGENTS.md`.
+
 ## Current non-goals
 
 - no CLI implementation
@@ -60,12 +78,14 @@ Only after that, read task-local context files.
 - no agent orchestration framework
 - no vendor lock-in
 - no broad theory expansion
+- no alternate monolithic command surface
 
 ## Current structural risks
 
 - the kit can become too abstract if examples are not kept practical
 - the kit can become decorative if it stops dogfooding its own rules
 - the kit can become overbuilt if automation arrives before repeated manual use proves pain
+- terminal agents may alter their own governance unless protected-path discipline is followed
 
 ## Reentry rule
 
