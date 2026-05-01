@@ -41,6 +41,33 @@ If that summary cannot be produced honestly, do not change macrostructure.
 
 After structural or semantic changes, update the relevant context files in the same cycle.
 
+## Protected governance paths
+
+During normal operational work, an agent may read all governance files but must not modify the command/control contract that governs its own behavior.
+
+Protected command files in this repository:
+
+- `AGENTS.md`
+- `README.md`
+- `docs/ops/PROJECT_SKELETON.md`
+- `docs/ops/CONTEXT_SYNC_CHECKLIST.md`
+
+`STATE.md` is different: it is the live state file and may be updated for truthful context write-back after structural or semantic changes.
+
+Do not treat `STATE.md` as permission to rewrite the governing contract.
+
+Changing protected command files requires explicit governance-maintenance mode.
+A governance-maintenance task must:
+
+1. name the protected file being changed;
+2. state why the existing rule is insufficient;
+3. keep the patch narrow;
+4. update `STATE.md` in the same cycle;
+5. leave an audit trail through an issue or equivalent checkpoint when the change affects repository governance.
+
+Do not create alternate command surfaces that duplicate or supersede `AGENTS.md`.
+If agent-facing operational rules need hardening, update `AGENTS.md` and the relevant context files instead.
+
 ## Standard target files
 
 The standard minimum reentry set for a target repository is:
@@ -93,7 +120,8 @@ Allowed work:
 - improving templates;
 - improving explanatory docs;
 - tightening terminology;
-- adding examples when they prove useful.
+- adding examples when they prove useful;
+- running explicit governance-maintenance tasks when governance itself is the target.
 
 Blocked by default:
 
@@ -102,6 +130,7 @@ Blocked by default:
 - agent orchestration framework;
 - vendor-specific lock-in;
 - broad "AI safety" theory;
-- decorative process documents.
+- decorative process documents;
+- alternate command documents that compete with `AGENTS.md`.
 
 If automation becomes necessary later, document the pain first.
