@@ -29,7 +29,7 @@ The repository is a public, Markdown-first governance bootstrap kit for LLM-assi
 
 `Issue #1` records the final clean dogfood audit after the v0.2 repair cycle and follow-up path-canonicalization pass. It is closed as completed.
 
-`Issue #2` records the adversarial audit that identified terminal-agent governance self-protection gaps. The repair adds protected governance path rules and explicit governance-maintenance mode.
+`Issue #2` records the adversarial audit that identified terminal-agent governance self-protection gaps. It is closed as completed after adding protected governance path rules and explicit governance-maintenance mode.
 
 ## Active blockers
 
@@ -81,12 +81,10 @@ These files may be read during normal operation but may only be changed in expli
 
 ## Next recommended narrow step
 
-Finish Issue #2 by reauditing the checked governance set after the protected-path repair.
-
-If the reaudited set is clean, close Issue #2 and update this file again with the final checkpoint.
+Use the kit on one real target repository and record the friction.
 
 Do not automate until the manual prompt/template workflow has been used enough to expose repeated failure points.
 
 ## Last context write-back
 
-`v0.3 protected governance path repair: AGENTS, PROJECT_SKELETON, and CONTEXT_SYNC_CHECKLIST now distinguish protected command files from the live STATE file and require explicit governance-maintenance mode for self-governance changes.`
+`v0.3 protected governance path checkpoint: Issue #2 closed after reauditing AGENTS, STATE, PROJECT_SKELETON, and CONTEXT_SYNC_CHECKLIST. The checked set now separates protected command files from the live STATE file and requires governance-maintenance mode for self-governance changes.`
