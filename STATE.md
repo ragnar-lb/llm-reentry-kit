@@ -10,7 +10,7 @@ It exists so a future agent can re-enter this repository without guessing.
 
 ## Current phase
 
-`v0.3 protected-governance-path discipline`
+`v0.4 non-programmer usability pass`
 
 The repository is a public, Markdown-first governance bootstrap kit for LLM-assisted repositories.
 
@@ -85,6 +85,31 @@ Use the kit on one real target repository and record the friction.
 
 Do not automate until the manual prompt/template workflow has been used enough to expose repeated failure points.
 
+## Last stable checkpoint (v0.3)
+
+`Issue #2` closed after adversarial audit. Protected governance path rules and explicit governance-maintenance mode added. Checked set now separates protected command files from the live STATE file.
+
+## What changed in v0.4 (branch `claude/improve-repo-structure-W3Ceb`)
+
+This branch is stewarded by Claude (Anthropic) via Claude Code. Do not modify its files without explicit authorization from the repository owner.
+
+Changes completed:
+
+- `CLAUDE.md` added — Claude Code entry point; declares branch stewardship; does not compete with `AGENTS.md`.
+- `examples/minimal-target-repo/` completed — all five standard minimum reentry files present, filled in for a concrete fictional project (invoice-parser); no longer just a text description of what should exist.
+- `templates/README.md.template` added — the template set was missing a README template; README is part of the standard minimum reentry set.
+- `prompts/RESUME_SESSION.md` added — prompt for resuming work after a session gap; the most common non-programmer use case and previously missing from the kit.
+- `templates/CLAUDE.md.template` added — template for a Claude Code entry point in target repositories.
+- `docs/HUMAN_GUIDE.md` added — plain-language guide for non-programmer project owners: what a well-behaved agent looks like, red flags, what to say when something is wrong.
+- `README.md` patched (governance-maintenance) — added RESUME_SESSION to quickstart; added "For Claude Code users" section.
+- `docs/ops/PROJECT_SKELETON.md` patched (governance-maintenance) — added new files to the Core directories listing.
+
+## Next recommended narrow step
+
+Use the kit on one real target repository (stress-test case: 100% LLM-governed) and record the friction.
+
+Do not automate until the manual prompt/template workflow has been used enough to expose repeated failure points.
+
 ## Last context write-back
 
-`v0.3 protected governance path checkpoint: Issue #2 closed after reauditing AGENTS, STATE, PROJECT_SKELETON, and CONTEXT_SYNC_CHECKLIST. The checked set now separates protected command files from the live STATE file and requires governance-maintenance mode for self-governance changes.`
+`v0.4 non-programmer usability pass: RESUME_SESSION prompt, CLAUDE.md template, HUMAN_GUIDE, completed example, README template, and governance-maintenance patches to README and PROJECT_SKELETON. Branch claude/improve-repo-structure-W3Ceb.`

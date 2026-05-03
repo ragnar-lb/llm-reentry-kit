@@ -85,6 +85,20 @@ Read `prompts/MERGE_READY_REVIEW.md` from `llm-reentry-kit` and review this bran
 Do not edit files unless the review finds a blocking governance issue.
 ```
 
+To resume work on a project after a gap (use this at the start of every new session):
+
+```text
+Read `prompts/RESUME_SESSION.md` from `llm-reentry-kit` and follow it before doing anything else.
+```
+
+## For Claude Code users
+
+If the target repository will be operated with Claude Code, add a `CLAUDE.md` file at the repository root using `templates/CLAUDE.md.template`.
+
+`CLAUDE.md` is the Claude Code entry point. It directs Claude to read the standard minimum reentry set before acting. It does not replace `AGENTS.md`; it points to it.
+
+See `docs/HUMAN_GUIDE.md` for a plain-language guide on how to verify that an agent is following the reentry contract correctly.
+
 ## What this kit is not
 
 This is not a framework.

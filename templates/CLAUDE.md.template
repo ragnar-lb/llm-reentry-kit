@@ -1,0 +1,46 @@
+# CLAUDE.md
+
+This file is the Claude Code entry point for `<project name>`.
+
+## Reentry
+
+Do not assume you remember context from previous sessions.
+
+Before any repo-level work, read the standard minimum reentry set in order:
+
+1. `AGENTS.md`
+2. `README.md`
+3. `STATE.md`
+4. `docs/ops/PROJECT_SKELETON.md`
+5. `docs/ops/CONTEXT_SYNC_CHECKLIST.md`
+
+`AGENTS.md` is the executive instruction file for all agents in this repository.
+This file does not supersede it.
+
+## Before structural or semantic work
+
+Be able to state all of the following from the files you just read:
+
+- what this project is;
+- what this project is not;
+- the current phase;
+- the active blockers;
+- what this task changes;
+- what this task does not reopen.
+
+If you cannot state these things honestly, stop and say so to the user.
+Do not perform macrostructural work until you can.
+
+## After structural or semantic work
+
+Update `STATE.md` in the same cycle.
+
+Review without context write-back is incomplete work.
+The next agent session starts from whatever STATE.md says when you finish.
+
+## Scope guard
+
+Do not add runtime code, a CLI, a framework, or dependencies unless the project owner explicitly authorizes it.
+
+When a decision is genuinely ambiguous, ask rather than assume.
+Return governance burden to the user only when a real decision is required — not to avoid responsibility for an obvious safe choice.

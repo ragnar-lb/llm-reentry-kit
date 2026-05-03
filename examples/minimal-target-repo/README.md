@@ -3,6 +3,7 @@
 This directory shows the smallest useful shape of a target repository after applying `llm-reentry-kit`.
 
 It is not a real application.
+It models a fictional Python invoice-parsing script owned by a non-programmer user.
 It is a reference example for humans and agents.
 
 ## Before
@@ -11,7 +12,8 @@ A repository may begin with only:
 
 ```text
 README.md
-src/
+parse_invoices.py
+tests/fixtures/
 ```
 
 The user asks:
@@ -34,11 +36,19 @@ docs/ops/PROJECT_SKELETON.md
 docs/ops/CONTEXT_SYNC_CHECKLIST.md
 ```
 
-Future vague requests trigger context rehydration before structural work.
+This directory contains all five files, filled in for the fictional invoice-parser project.
+Read them to see what a concrete installation looks like.
+
+## What makes this example realistic
+
+- `STATE.md` names a specific phase, real blockers, and a concrete next step — not generic placeholders.
+- `PROJECT_SKELETON.md` names actual files and explains why certain things are non-goals.
+- `CONTEXT_SYNC_CHECKLIST.md` lists the actual blocked scopes for this project (no web UI, no database).
+- `AGENTS.md` is the standard template, unchanged — it does not need to be customized per project unless the project has unusual agent rules.
 
 ## Expected behavior
 
-A future agent should first read the standard minimum reentry set, then task-local files, then summarize:
+A future agent opening this repository should first read the standard minimum reentry set, then task-local files, then summarize:
 
 - what exists;
 - what is blocked;
@@ -53,3 +63,4 @@ Only then should it recommend or change anything structural.
 The kit does not make the agent correct.
 
 It makes careless context drift easier to detect.
+It gives a non-programmer user a way to audit whether the agent read the right context before acting.
