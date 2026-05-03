@@ -10,7 +10,7 @@ It exists so a future agent can re-enter this repository without guessing.
 
 ## Current phase
 
-`v0.3 protected-governance-path discipline`
+`v0.4 first external dogfood target`
 
 The repository is a public, Markdown-first governance bootstrap kit for LLM-assisted repositories.
 
@@ -30,6 +30,8 @@ The repository is a public, Markdown-first governance bootstrap kit for LLM-assi
 `Issue #1` records the final clean dogfood audit after the v0.2 repair cycle and follow-up path-canonicalization pass. It is closed as completed.
 
 `Issue #2` records the adversarial audit that identified terminal-agent governance self-protection gaps. It is closed as completed after adding protected governance path rules and explicit governance-maintenance mode.
+
+`Issue #4` records the first external dogfood application: bootstrapping the kit into `ragnar-lb/llm-reentry-kit-test`, an empty/private controlled stress-test repository.
 
 ## Active blockers
 
@@ -74,17 +76,19 @@ These files may be read during normal operation but may only be changed in expli
 
 ## Current risks
 
-- the minimal example may become decorative if the kit is not tested on real target repositories
-- the kit may become decorative if it stops dogfooding its own rules
+- the first external dogfood target was empty, so it does not prove behavior on messy existing repositories
+- the kit may become decorative if it is not tested against conflicting instructions, placeholder leakage, and terminal-agent write restrictions
 - the kit may become overbuilt if automation is added before repeated manual use proves pain
 - protected-path discipline is still documentary/operational, not OS-level or Git-hook enforcement
 
 ## Next recommended narrow step
 
-Use the kit on one real target repository and record the friction.
+Ask an independent agent to review `ragnar-lb/llm-reentry-kit-test` and propose the next step.
+
+Expected behavior: the agent should identify it as a stress-test target and should not invent product/application scope.
 
 Do not automate until the manual prompt/template workflow has been used enough to expose repeated failure points.
 
 ## Last context write-back
 
-`v0.3 protected governance path checkpoint: Issue #2 closed after reauditing AGENTS, STATE, PROJECT_SKELETON, and CONTEXT_SYNC_CHECKLIST. The checked set now separates protected command files from the live STATE file and requires governance-maintenance mode for self-governance changes.`
+`v0.4 external dogfood checkpoint: the kit was installed into llm-reentry-kit-test, the target was rechecked, friction was recorded in Issue #4, and the next narrow test is independent-agent review of the target repository.`
