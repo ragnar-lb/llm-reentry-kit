@@ -85,6 +85,18 @@ Use the kit on one real target repository and record the friction.
 
 Do not automate until the manual prompt/template workflow has been used enough to expose repeated failure points.
 
+## In-progress branch work
+
+Branch `claude/improve-repo-structure-W3Ceb` is under active development by Claude (Anthropic) via Claude Code.
+
+Changes in progress:
+
+- `CLAUDE.md` added — Claude Code entry point; declares branch stewardship; does not compete with `AGENTS.md`.
+- `examples/minimal-target-repo/` completed — all five standard minimum reentry files now present, filled in for a concrete fictional project (invoice-parser). The example is now a working reference, not just a description of what should exist.
+- `templates/README.md.template` added — the template set was missing a README template; the README is part of the standard minimum reentry set.
+
+Do not modify these files on this branch without explicit authorization from the repository owner.
+
 ## Last context write-back
 
-`v0.3 protected governance path checkpoint: Issue #2 closed after reauditing AGENTS, STATE, PROJECT_SKELETON, and CONTEXT_SYNC_CHECKLIST. The checked set now separates protected command files from the live STATE file and requires governance-maintenance mode for self-governance changes.`
+`branch improve-repo-structure-W3Ceb: added CLAUDE.md, completed minimal-target-repo example with all 5 reentry files, added README.md.template to fill gap in template set.`

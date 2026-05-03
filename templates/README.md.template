@@ -1,0 +1,33 @@
+# <project name>
+
+**<one sentence: what this project does and who it is for>**
+
+<2–3 sentences of plain-language context. Do not assume the reader knows the technical stack. Write for the user who owns the project, not the agent that will read it.>
+
+## What this project does
+
+<Describe the core function. Be concrete. Avoid buzzwords.>
+
+## What this project does not do
+
+<List explicit non-goals. This prevents future agents from silently expanding scope.>
+
+## Quickstart
+
+<Minimal steps to run or use the project. Skip steps that don't exist yet.>
+
+## Current state
+
+See `STATE.md` for the current phase, active blockers, allowed work, and next recommended step.
+
+## Governance
+
+Before structural or semantic changes, agents must read:
+
+1. `AGENTS.md`
+2. `README.md`
+3. `STATE.md`
+4. `docs/ops/PROJECT_SKELETON.md`
+5. `docs/ops/CONTEXT_SYNC_CHECKLIST.md`
+
+Do not start macrostructural work without a current state summary.
