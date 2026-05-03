@@ -25,14 +25,18 @@ Its primary audience is people building real software with coding agents before 
 
 - `README.md` — human-facing project overview and quickstart; protected command file.
 - `AGENTS.md` — single executive instruction entrypoint for agents working on this kit; protected command file.
+- `CLAUDE.md` — Claude Code entry point; declares branch stewardship; defers executive authority to `AGENTS.md`.
 - `STATE.md` — current operational phase, blockers, allowed work, risks, and next narrow step; live state file for write-back.
 - `docs/ops/PROJECT_SKELETON.md` — stable structure map; protected command file.
 - `docs/ops/CONTEXT_SYNC_CHECKLIST.md` — before/after governance gate; protected command file.
 - `prompts/` — copy-pasteable prompts for applying the kit to target repositories.
+- `prompts/RESUME_SESSION.md` — prompt for resuming work after a session gap; most common non-programmer use case.
 - `templates/` — adaptable target-repository file templates.
-- `docs/` — explanatory notes, concepts, and anti-patterns.
+- `templates/CLAUDE.md.template` — template for adding a Claude Code entry point to a target repository.
+- `docs/` — explanatory notes, concepts, and guides.
+- `docs/HUMAN_GUIDE.md` — plain-language guide for non-programmer project owners: red flags, verification steps, what to expect from a well-behaved agent.
 - `docs/ops/` — this repository's own live reentry and context-sync documents.
-- `examples/` — small examples showing how the kit may look when applied.
+- `examples/` — concrete examples showing how the kit looks when applied; `examples/minimal-target-repo/` contains all five standard minimum reentry files filled in for a fictional project.
 
 ## Core concepts
 
